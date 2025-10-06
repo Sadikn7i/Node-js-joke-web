@@ -1,0 +1,81 @@
+/* Background & Body */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    font-family: 'Poppins', sans-serif;
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+/* Scene for 3D effect */
+.scene {
+    width: 400px;
+    height: 300px;
+    perspective: 800px;
+}
+
+/* 3D Card */
+.card {
+    background: linear-gradient(145deg, #ff8c00, #ff3c3c);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    color: white;
+}
+
+/* Card hover rotation */
+.card:hover {
+    transform: rotateY(15deg) rotateX(10deg) translateZ(20px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+}
+
+/* Heading */
+.card h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(255,255,255,0.8);
+}
+
+/* Joke text */
+.card p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-shadow: 0 0 6px rgba(0,0,0,0.3);
+    min-height: 60px;
+}
+
+/* Button */
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #00ffff, #ff00ff);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+}
+
+/* Button hover animation */
+button:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    transform: translateY(-3px) rotateX(5deg);
+    background: linear-gradient(270deg, #ff00ff, #00ffff);
+}
+
+/* Button active animation */
+button:active {
+    transform: translateY(1px) rotateX(0deg);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
