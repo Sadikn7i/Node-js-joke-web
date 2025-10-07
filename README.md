@@ -1,4 +1,4 @@
-# Random Joke Web App
+
 
 A simple, fast web application built with **Node.js** and **Express** that delivers random jokes to a user-friendly frontend interface. This project demonstrates basic full-stack development by serving static content and handling simple API requests.
 
